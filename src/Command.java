@@ -1,8 +1,5 @@
 import java.util.Arrays;
 
-/**
- * Created by nerff on 06.09.13.
- */
 public class Command {
     private String command;
     private String[] tokens;
@@ -17,21 +14,18 @@ public class Command {
 
     boolean validate() {
         tokens = command.split("\\s+");
-        if (Arrays.asList(allowedCmds).contains(tokens[0])) {
-            return true;
-        }
-        return false;
+        return Arrays.asList(allowedCmds).contains(tokens[0]);
     }
 
     private boolean getPair() {
-        for (int i = 0; i < 2; i++) {
-            if (mStack.isEmpty()) {
-                return false;
-            } else {
+        if (mStack.getCursor() > 0) {
+            for (int i = 0; i < 2; i++) {
                 pair[i] = mStack.pop();
             }
+            return true;
         }
-        return true;
+        System.out.println(" * Not enough values");
+        return false;
     }
 
     void execute() {
@@ -46,6 +40,8 @@ public class Command {
                         mStack.push(value);
                     } catch (NumberFormatException ne) {
                         System.out.println(" * Not a Number: " + tokens[1]);
+                    } catch (ArrayIndexOutOfBoundsException ae) {
+                        System.out.println(" * No value for " + action);
                     }
                 } //PUSH
                 if (action.equals("POP")) {
@@ -93,6 +89,7 @@ public class Command {
 
             } else {
                 System.out.println(" * Command " + tokens[0] + " is not implemented");
+                System.out.println(" * Available commands are: " + Arrays.toString(allowedCmds));
             }
         }
     }

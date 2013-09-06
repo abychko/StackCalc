@@ -1,6 +1,6 @@
-/**
- * Created by nerff on 06.09.13.
- */
+
+
+
 public class Stack {
 
     private double[] stack;
@@ -9,6 +9,10 @@ public class Stack {
     Stack(int size) {
         stack = new double[size];
         cursor = -1;
+    }
+
+    int getCursor() {
+        return cursor;
     }
 
     boolean isEmpty() {

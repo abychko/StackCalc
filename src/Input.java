@@ -2,9 +2,6 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
-/**
- * Created by nerff on 06.09.13.
- */
 public class Input {
     protected Scanner mScanner;
     boolean done = false;
@@ -24,6 +21,7 @@ public class Input {
 
     private void initManualInput() {
         mScanner = new Scanner(System.in);
+        System.out.println("Enter your commands and hit Enter, type END for exit");
     }
 
     public boolean isDone() {
