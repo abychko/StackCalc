@@ -6,8 +6,9 @@ import java.util.Arrays;
 public class Command {
     private String command;
     private String[] tokens;
-    private String[] allowedCmds = {"END", "PRINT", "PUSH", "POP", "SQRT"};
+    private String[] allowedCmds = {"+", "-", "*", "/", "END", "PRINT", "PUSH", "POP", "SQRT"};
     private Stack mStack;
+    private double[] pair = new double[2];
 
     Command(String cmd, Stack stack) {
         command = cmd.trim();
@@ -20,6 +21,17 @@ public class Command {
             return true;
         }
         return false;
+    }
+
+    private boolean getPair() {
+        for (int i = 0; i < 2; i++) {
+            if (mStack.isEmpty()) {
+                return false;
+            } else {
+                pair[i] = mStack.pop();
+            }
+        }
+        return true;
     }
 
     void execute() {
@@ -46,7 +58,36 @@ public class Command {
                 }
                 if (action.equals("SQRT")) {
                     if (!mStack.isEmpty()) {
-                        System.out.println(Math.sqrt(mStack.top()));
+                        double value = mStack.pop();
+                        mStack.push(Math.sqrt(value));
+                    }
+                }
+                if (action.equals("+")) {
+                    if (getPair()) {
+                        if (!mStack.isFull()) {
+                            mStack.push(pair[0] + pair[1]);
+                        }
+                    }
+                }
+                if (action.equals("-")) {
+                    if (getPair()) {
+                        if (!mStack.isFull()) {
+                            mStack.push(pair[0] - pair[1]);
+                        }
+                    }
+                }
+                if (action.equals("/")) {
+                    if (getPair()) {
+                        if (!mStack.isFull()) {
+                            mStack.push(pair[0] / pair[1]);
+                        }
+                    }
+                }
+                if (action.equals("*")) {
+                    if (getPair()) {
+                        if (!mStack.isFull()) {
+                            mStack.push(pair[0] * pair[1]);
+                        }
                     }
                 }
 
