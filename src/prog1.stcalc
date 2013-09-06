@@ -1,0 +1,15 @@
+#comment
+
+
+PUSH 1e1
+PUSH 2e1
+PUSH 1e2
+SQRT
++
+-
+/
+*
+POP
+PRINT
+DEFINE a 4
+
