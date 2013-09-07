@@ -1,26 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="42e96df6-0aad-45a6-b105-4412c14bebb2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Define.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Divider.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Minus.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Multiplier.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Plus.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Pop.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Print.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Push.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Sqrt.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Command.java" afterPath="$PROJECT_DIR$/src/Command.java" />
+    <list default="true" id="42e96df6-0aad-45a6-b105-4412c14bebb2" name="Default" comment="packed all commands to Map">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/StackCalc.java" afterPath="$PROJECT_DIR$/src/StackCalc.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="StackCalc.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="42e96df6-0aad-45a6-b105-4412c14bebb2" time="1378540736870" ignored="false" />
+    <file path="/Dummy.txt" changelist="42e96df6-0aad-45a6-b105-4412c14bebb2" time="1378547596810" ignored="false" />
     <file path="/Command.java" changelist="42e96df6-0aad-45a6-b105-4412c14bebb2" time="1378544041261" ignored="false" />
     <file path="/commandPop.java" changelist="42e96df6-0aad-45a6-b105-4412c14bebb2" time="1378543960978" ignored="false" />
-    <file path="/StackCalc.java" changelist="42e96df6-0aad-45a6-b105-4412c14bebb2" time="1378545529122" ignored="false" />
+    <file path="/StackCalc.java" changelist="42e96df6-0aad-45a6-b105-4412c14bebb2" time="1378547711514" ignored="false" />
     <file path="/Push.java" changelist="42e96df6-0aad-45a6-b105-4412c14bebb2" time="1378543669959" ignored="false" />
     <file path="/fragment.java" changelist="42e96df6-0aad-45a6-b105-4412c14bebb2" time="1378545442151" ignored="false" />
     <file path="/Print.java" changelist="42e96df6-0aad-45a6-b105-4412c14bebb2" time="1378543942114" ignored="false" />
@@ -86,12 +76,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="StackCalc.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="StackCalc.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/StackCalc.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="48" selection-start="269" selection-end="269" vertical-scroll-proportion="0.0">
+            <state line="11" column="34" selection-start="324" selection-end="324" vertical-scroll-proportion="0.3675799">
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#270#286#0" expanded="true" />
+                <element signature="e#339#356#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -106,10 +98,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Define.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Multiplier.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Multiplier.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="19" column="37" selection-start="572" selection-end="572" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Define.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Define.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="26" selection-start="231" selection-end="231" vertical-scroll-proportion="0.34246576">
+            <state line="19" column="53" selection-start="521" selection-end="521" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -147,8 +148,8 @@
         <option value="$PROJECT_DIR$/src/Minus.java" />
         <option value="$PROJECT_DIR$/src/Multiplier.java" />
         <option value="$PROJECT_DIR$/src/Divider.java" />
-        <option value="$PROJECT_DIR$/src/StackCalc.java" />
         <option value="$PROJECT_DIR$/src/Define.java" />
+        <option value="$PROJECT_DIR$/src/StackCalc.java" />
       </list>
     </option>
   </component>
@@ -443,6 +444,11 @@
       <updated>1378461703435</updated>
       <workItem from="1378461704895" duration="13196000" />
     </task>
+    <task id="LOCAL-00001" summary="added interface class and derivates">
+      <created>1378547042818</created>
+      <updated>1378547042818</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -524,11 +530,11 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" />
+    <option name="LAST_COMMIT_MESSAGE" value="packed all commands to Map" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
-    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_FILE_COMMIT" value="false" />
     <option name="FILE_HISTORY_DIALOG_COMMENTS_SPLITTER_PROPORTION" value="0.8" />
     <option name="FILE_HISTORY_DIALOG_SPLITTER_PROPORTION" value="0.5" />
@@ -538,6 +544,8 @@
     <option name="UPDATE_FILTER_BY_SCOPE" value="false" />
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
+    <MESSAGE value="added interface class and derivates" />
+    <MESSAGE value="packed all commands to Map" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -624,13 +632,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Multiplier.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="37" selection-start="572" selection-end="572" vertical-scroll-proportion="0.65068495">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Plus.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="23" column="35" selection-start="220" selection-end="658" vertical-scroll-proportion="0.7876712">
@@ -638,12 +639,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/StackCalc.java">
+    <entry file="file://$PROJECT_DIR$/src/Define.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="48" selection-start="269" selection-end="269" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="19" column="53" selection-start="521" selection-end="521" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
@@ -654,10 +653,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Define.java">
+    <entry file="file://$PROJECT_DIR$/src/Multiplier.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="26" selection-start="231" selection-end="231" vertical-scroll-proportion="0.34246576">
+        <state line="19" column="37" selection-start="572" selection-end="572" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/StackCalc.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="34" selection-start="324" selection-end="324" vertical-scroll-proportion="0.3675799">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#270#286#0" expanded="true" />
+            <element signature="e#339#356#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -8,8 +8,8 @@ public class StackCalc {
     public static void main(String args[]) {
         Stack mStack = new Stack(10);
         Input myInput;
-        Map<String, Double> cmdMap = new HashMap();
-
+        Map<String, Double> defines = new HashMap<String, Double>();
+        Map<String, Command> cmdMap = new HashMap<String, Command>();
 
         //Command mCommand;
 
@@ -19,24 +19,41 @@ public class StackCalc {
             myInput = new Input(args[0]);
         }
         Command mPop = new Pop();
-        Command mPush = new Push();
-        Command mPrint = new Print();
-        Command mSqrt = new Sqrt();
-        Command mPlus = new Plus();
-        Command mMinus = new Minus();
-        Command mMultiplier = new Multiplier();
-        Command mDivider = new Divider();
-        Command mDefine = new Define();
+        cmdMap.put("POP", mPop);
         //
-        mPop.execute("POP", mStack, cmdMap);
-        mPush.execute("PUSH 3", mStack, cmdMap);
-        mPrint.execute("PRINT", mStack, cmdMap);
-        mSqrt.execute("SQRT", mStack, cmdMap);
-        mPlus.execute("+", mStack, cmdMap);
-        mMinus.execute("-", mStack, cmdMap);
-        mMultiplier.execute("*", mStack, cmdMap);
-        mDivider.execute("/", mStack, cmdMap);
-        mDefine.execute("define a 3", mStack, cmdMap);
+        Command mPush = new Push();
+        cmdMap.put("PUSH", mPop);
+        //
+        Command mPrint = new Print();
+        cmdMap.put("PRINT", mPrint);
+        //
+        Command mSqrt = new Sqrt();
+        cmdMap.put("SQRT", mSqrt);
+        //
+        Command mPlus = new Plus();
+        cmdMap.put("+", mPlus);
+        //
+        Command mMinus = new Minus();
+        cmdMap.put("-", mMinus);
+        //
+        Command mMultiplier = new Multiplier();
+        cmdMap.put("*", mMultiplier);
+        //
+        Command mDivider = new Divider();
+        cmdMap.put("/", mDivider);
+        //
+        Command mDefine = new Define();
+        cmdMap.put("DEFINE", mDefine);
+        //
+        mPop.execute("POP", mStack, defines);
+        mPush.execute("PUSH 3", mStack, defines);
+        mPrint.execute("PRINT", mStack, defines);
+        mSqrt.execute("SQRT", mStack, defines);
+        mPlus.execute("+", mStack, defines);
+        mMinus.execute("-", mStack, defines);
+        mMultiplier.execute("*", mStack, defines);
+        mDivider.execute("/", mStack, defines);
+        mDefine.execute("define a 3", mStack, defines);
 
         // while (!myInput.isDone()) {
         //   mCommand = new Command(myInput.getNextLine(), mStack);
