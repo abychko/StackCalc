@@ -1,36 +1,31 @@
 #comment
+#calculating X1 = (-b +sqrt(b*b – 4ac)) / 2a
+#>>>>>>>>>>>>>>>>>>>math domain error
 
-
-PUSH 1e1
-PUSH 2e1
-+
-print
+define a 6
+define b 100
+define c 2
 #
-PUSH 3e1
-PUSH 4e1
--
-print
-#
-PUSH 5e1
-PUSH 5e2
+push 2
+push a
 *
-PRINT
 #
-PUSH 6e2
-PUSH 7e1
+push c
+push a
+push 4
+*
+*
+#
+push b
+push b
+*
+-
+#
+sqrt
+#
+push b
+push -1
+*
++
 /
-PRINT
-#
-PUSH 1e2
-SQRT
-PRINT
-#
-push 15
-push 12
-
 print
-
-POP
-PRINT
-DEFINE a 4
-

@@ -9,16 +9,38 @@ import java.util.Map;
  */
 public class Push implements Command {
     @Override
-    public void execute(String cmd, Stack stack, Map<String, Double> defines) {
-        String[] tokens = cmd.split("\\s+");
-        try {
-            double value = Double.valueOf(tokens[1]);
-            stack.push(value);
-        } catch (NumberFormatException ne) {
-            System.out.println(" * Not a Number: " + tokens[1]);
-        } catch (ArrayIndexOutOfBoundsException ae) {
-            System.out.println(" * No value for " + tokens[0]);
-        }
+    public void execute(String command[], Stack stack, Map<String, Double> defines) {
 
+        double value;
+        boolean found = false;
+
+        if (command.length == 2) {
+            if (command[1].matches("^[a-zA-Z_]\\w*")) { //var is set?
+                //looking for already defined variable
+                for (String key : defines.keySet()) {
+                    if (key.equals(command[1])) {
+                        // System.out.println("Found: " + key);
+                        value = defines.get(key);
+                        found = true;
+                        stack.push(value);
+                    }
+                }
+                if (!found) {
+                    System.out.println("Variable " + command[1] + " is not defined");
+                    return;
+                }
+            } else { // set as digit or empty
+                try {
+                    value = Double.valueOf(command[1]);
+                    stack.push(value);
+                } catch (NumberFormatException ne) {
+                    System.out.println(" * Not a Number: " + command[1]);
+                    return;
+                } catch (ArrayIndexOutOfBoundsException ae) {
+                    System.out.println(" * No value for " + command[0]);
+                }
+
+            }
+        }
     }
 }

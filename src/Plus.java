@@ -11,15 +11,19 @@ public class Plus implements Command {
     private double[] pair = new double[2];
 
     @Override
-    public void execute(String command, Stack mStack, Map<String, Double> defines) {
+    public void execute(String command[], Stack mStack, Map<String, Double> defines) {
         if (mStack.getCursor() > 0) {
             for (int i = 0; i < 2; i++) {
                 pair[i] = mStack.pop();
             }
             if (!mStack.isFull()) {
-                mStack.push(pair[0] + pair[1]);
+                double res;
+                res = pair[0] + pair[1];
+                mStack.push(res);
+                System.out.println(" * " + pair[0] + " + " + pair[1] + " = " + res);
             }
+        } else {
+            System.out.println(" * Not enough values");
         }
-        System.out.println(" * Not enough values");
     }
 }

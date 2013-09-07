@@ -1,3 +1,4 @@
+
 import java.util.Map;
 
 /**
@@ -9,11 +10,17 @@ import java.util.Map;
  */
 public class Define implements Command {
     @Override
-    public void execute(String command, Stack mStack, Map<String, Double> defines) {
-        String[] cmd = command.split("\\s+");
-        if (cmd.length > 2) {
-            defines.put(cmd[1], Double.valueOf(cmd[2]));
-            System.out.println(" * Define is done");
+    public void execute(String command[], Stack mStack, Map<String, Double> defines) {
+        String var = command[1];
+        if (command.length == 3) {
+            if (var.matches("^[a-zA-Z_]\\w*")) {
+                defines.put(var, Double.valueOf(command[2]));
+                System.out.println(" * " + var + " = " + command[2]);
+            } else {
+                System.out.println(" * Mailformed variable: " + var);
+            }
+        } else {
+            System.out.println(" * Mailformed define command");
         }
     }
 }

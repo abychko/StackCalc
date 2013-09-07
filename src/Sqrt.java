@@ -9,10 +9,13 @@ import java.util.Map;
  */
 public class Sqrt implements Command {
     @Override
-    public void execute(String command, Stack mStack, Map<String, Double> defines) {
+    public void execute(String command[], Stack mStack, Map<String, Double> defines) {
         if (!mStack.isEmpty()) {
             double value = mStack.pop();
-            mStack.push(Math.sqrt(value));
+            double res;
+            res = Math.sqrt(value);
+            mStack.push(res);
+            System.out.println(" * SQRT(" + value + ") = " + res);
         }
     }
 }

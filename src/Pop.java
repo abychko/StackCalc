@@ -9,7 +9,7 @@ import java.util.Map;
  */
 public class Pop implements Command {
     @Override
-    public void execute(String cmd, Stack mStack, Map<String, Double> defines) {
+    public void execute(String command[], Stack mStack, Map<String, Double> defines) {
         if (!mStack.isEmpty()) {
             mStack.pop();
         }

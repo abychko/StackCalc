@@ -22,7 +22,7 @@ public class StackCalc {
         cmdMap.put("POP", mPop);
         //
         Command mPush = new Push();
-        cmdMap.put("PUSH", mPop);
+        cmdMap.put("PUSH", mPush);
         //
         Command mPrint = new Print();
         cmdMap.put("PRINT", mPrint);
@@ -45,20 +45,28 @@ public class StackCalc {
         Command mDefine = new Define();
         cmdMap.put("DEFINE", mDefine);
         //
-        mPop.execute("POP", mStack, defines);
-        mPush.execute("PUSH 3", mStack, defines);
-        mPrint.execute("PRINT", mStack, defines);
-        mSqrt.execute("SQRT", mStack, defines);
-        mPlus.execute("+", mStack, defines);
-        mMinus.execute("-", mStack, defines);
-        mMultiplier.execute("*", mStack, defines);
-        mDivider.execute("/", mStack, defines);
-        mDefine.execute("define a 3", mStack, defines);
+        while (!myInput.isDone()) {
+            String cmd = myInput.getNextLine();
+            String[] tokens = cmd.trim().split("\\s+");
+            if (!((cmd.isEmpty()) || (cmd.startsWith("#")))) {
+                if (!cmd.equals("END")) {
+                    boolean cmdFound = false;
+                    for (String key : cmdMap.keySet()) {
+                        if (key.equals(tokens[0])) {
+                            // System.out.println("Executing: " + key);
+                            cmdMap.get(key).execute(tokens, mStack, defines);
+                            cmdFound = true;
+                            break;
+                        }
+                    }
+                    if (!cmdFound) {
+                        System.out.println("Command " + tokens[0] + " is not implemented");
+                        System.out.println("Available commands are: " + cmdMap.keySet().toString() + ", END to exit");
 
-        // while (!myInput.isDone()) {
-        //   mCommand = new Command(myInput.getNextLine(), mStack);
-        // mCommand.execute();
-        //}
+                    }
+                }
+            }
+        }
 
     }
 }
