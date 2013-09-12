@@ -1,5 +1,4 @@
-
-
+package my.calc;
 
 public class Stack {
 
@@ -11,11 +10,11 @@ public class Stack {
         cursor = -1;
     }
 
-    int getCursor() {
+    public int getCursor() {
         return cursor;
     }
 
-    boolean isEmpty() {
+    public boolean isEmpty() {
         if (cursor == -1) {
             System.out.println(" * Stack is empty");
             return true;
@@ -23,7 +22,7 @@ public class Stack {
         return false;
     }
 
-    boolean isFull() {
+    public boolean isFull() {
         if (cursor == (stack.length - 1)) {
             System.out.println(" * Stack is full");
             return true;
@@ -31,21 +30,21 @@ public class Stack {
         return false;
     }
 
-    double top() {
+    public double top() {
         if (!isEmpty()) {
             return stack[cursor];
         }
         return 0;
     }
 
-    double pop() {
+    public double pop() {
         if (!isEmpty()) {
             return stack[cursor--];
         }
         return 0;
     }
 
-    void push(double value) {
+    public void push(double value) {
         if (!isFull()) {
             stack[++cursor] = value;
             //System.out.println("Pushed " + value);

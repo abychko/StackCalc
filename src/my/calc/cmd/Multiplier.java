@@ -1,3 +1,7 @@
+package my.calc.cmd;
+
+import my.calc.Stack;
+
 import java.util.Map;
 
 /**
@@ -7,7 +11,7 @@ import java.util.Map;
  * Time: 16:13
  * To change this template use File | Settings | File Templates.
  */
-public class Multiplier implements Command {
+public class Multiplier implements Cmd {
     private double[] pair = new double[2];
 
     @Override

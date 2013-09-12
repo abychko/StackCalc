@@ -1,3 +1,10 @@
+package my.calc.cmd;
+
+import my.calc.Stack;
+
+import javax.annotation.Resource;
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
 import java.util.Map;
 
 /**
@@ -7,10 +14,19 @@ import java.util.Map;
  * Time: 15:40
  * To change this template use File | Settings | File Templates.
  */
-public class Push implements Command {
+public class Push implements Cmd {
+
+    //  @Resource (type = "Stack")
+    //@Retention(RetentionPolicy.RUNTIME)
+    //private Stack stack;
+
+    //@Resource (type = "DefMap")
+    //@Retention(RetentionPolicy.RUNTIME)
+    //private Map<String, Double> defines;
+
     @Override
     public void execute(String command[], Stack stack, Map<String, Double> defines) {
-
+/*  */
         double value;
         boolean found = false;
 

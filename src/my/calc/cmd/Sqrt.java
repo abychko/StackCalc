@@ -1,3 +1,7 @@
+package my.calc.cmd;
+
+import my.calc.Stack;
+
 import java.util.Map;
 
 /**
@@ -7,7 +11,7 @@ import java.util.Map;
  * Time: 15:55
  * To change this template use File | Settings | File Templates.
  */
-public class Sqrt implements Command {
+public class Sqrt implements Cmd {
     @Override
     public void execute(String command[], Stack mStack, Map<String, Double> defines) {
         if (!mStack.isEmpty()) {

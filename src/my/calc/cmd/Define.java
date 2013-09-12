@@ -1,3 +1,6 @@
+package my.calc.cmd;
+
+import my.calc.Stack;
 
 import java.util.Map;
 
@@ -8,7 +11,7 @@ import java.util.Map;
  * Time: 16:17
  * To change this template use File | Settings | File Templates.
  */
-public class Define implements Command {
+public class Define implements Cmd {
     @Override
     public void execute(String command[], Stack mStack, Map<String, Double> defines) {
         String var = command[1];
