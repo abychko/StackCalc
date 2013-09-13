@@ -2,8 +2,6 @@ package my.calc.cmd;
 
 import my.calc.Stack;
 
-import java.util.Map;
-
 /**
  * Created with IntelliJ IDEA.
  * User: abychko
@@ -12,10 +10,13 @@ import java.util.Map;
  * To change this template use File | Settings | File Templates.
  */
 public class Minus implements Cmd {
+
+    @Resource(type = "Stack")
+    Stack mStack;
     private double[] pair = new double[2];
 
     @Override
-    public void execute(String command[], Stack mStack, Map<String, Double> defines) {
+    public void execute(String command[]) {
         if (mStack.getCursor() > 0) {
             for (int i = 0; i < 2; i++) {
                 pair[i] = mStack.pop();

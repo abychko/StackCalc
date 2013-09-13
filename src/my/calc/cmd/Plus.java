@@ -2,8 +2,6 @@ package my.calc.cmd;
 
 import my.calc.Stack;
 
-import java.util.Map;
-
 /**
  * Created with IntelliJ IDEA.
  * User: abychko
@@ -14,8 +12,11 @@ import java.util.Map;
 public class Plus implements Cmd {
     private double[] pair = new double[2];
 
+    @Resource(type = "Stack")
+    Stack mStack;
+
     @Override
-    public void execute(String command[], Stack mStack, Map<String, Double> defines) {
+    public void execute(String command[]) {
         if (mStack.getCursor() > 0) {
             for (int i = 0; i < 2; i++) {
                 pair[i] = mStack.pop();

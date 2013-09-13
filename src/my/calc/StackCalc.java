@@ -2,7 +2,6 @@ package my.calc;
 
 import my.calc.cmd.Cmd;
 
-import java.util.HashMap;
 import java.util.Map;
 
 /**
@@ -11,10 +10,10 @@ import java.util.Map;
 public class StackCalc {
 
     public static void main(String args[]) {
-        Stack mStack = new Stack(10);
+
         Input myInput;
-        Map<String, Double> defines = new HashMap<String, Double>();
-        Map<String, Cmd> cmdMap = new HashMap<String, Cmd>();
+        Map<String, Double> defines;
+        Map<String, Cmd> cmdMap;
 
         if (args.length < 1) {
             myInput = new Input();
@@ -23,7 +22,10 @@ public class StackCalc {
         }
 
         CmdCreator mCreator = new CmdCreator();
-        mCreator.createCommands(cmdMap, mStack);
+        mCreator.createCommands();
+        cmdMap = mCreator.getCmdMap();
+        defines = mCreator.getDefines();
+
 
         while (!myInput.isDone()) {
             String cmd = myInput.getNextLine();
@@ -33,8 +35,7 @@ public class StackCalc {
                     boolean cmdFound = false;
                     for (String key : cmdMap.keySet()) {
                         if (key.equals(tokens[0])) {
-                            // System.out.println("Executing: " + key);
-                            cmdMap.get(key).execute(tokens, mStack, defines);
+                            cmdMap.get(key).execute(tokens);
                             cmdFound = true;
                             break;
                         }

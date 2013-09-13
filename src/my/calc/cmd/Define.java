@@ -12,8 +12,14 @@ import java.util.Map;
  * To change this template use File | Settings | File Templates.
  */
 public class Define implements Cmd {
+
+    @Resource(type = "Stack")
+    Stack mStack = null;
+    @Resource(type = "DefMap")
+    Map<String, Double> defines = null;
+
     @Override
-    public void execute(String command[], Stack mStack, Map<String, Double> defines) {
+    public void execute(String command[]) {
         String var = command[1];
         if (command.length == 3) {
             if (var.matches("^[a-zA-Z_]\\w*")) {

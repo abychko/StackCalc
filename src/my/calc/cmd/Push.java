@@ -2,9 +2,6 @@ package my.calc.cmd;
 
 import my.calc.Stack;
 
-import javax.annotation.Resource;
-import java.lang.annotation.Retention;
-import java.lang.annotation.RetentionPolicy;
 import java.util.Map;
 
 /**
@@ -16,16 +13,13 @@ import java.util.Map;
  */
 public class Push implements Cmd {
 
-    //  @Resource (type = "Stack")
-    //@Retention(RetentionPolicy.RUNTIME)
-    //private Stack stack;
-
-    //@Resource (type = "DefMap")
-    //@Retention(RetentionPolicy.RUNTIME)
-    //private Map<String, Double> defines;
+    @Resource(type = "Stack")
+    Stack mStack;
+    @Resource(type = "DefMap")
+    Map<String, Double> defines;
 
     @Override
-    public void execute(String command[], Stack stack, Map<String, Double> defines) {
+    public void execute(String command[]) {
 /*  */
         double value;
         boolean found = false;
@@ -38,7 +32,7 @@ public class Push implements Cmd {
                         // System.out.println("Found: " + key);
                         value = defines.get(key);
                         found = true;
-                        stack.push(value);
+                        mStack.push(value);
                     }
                 }
                 if (!found) {
@@ -48,7 +42,7 @@ public class Push implements Cmd {
             } else { // set as digit or empty
                 try {
                     value = Double.valueOf(command[1]);
-                    stack.push(value);
+                    mStack.push(value);
                 } catch (NumberFormatException ne) {
                     System.out.println(" * Not a Number: " + command[1]);
                     return;
