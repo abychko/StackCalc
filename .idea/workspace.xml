@@ -6,21 +6,10 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="42e96df6-0aad-45a6-b105-4412c14bebb2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/my/calc/cmd/Resource.java" />
+    <list default="true" id="42e96df6-0aad-45a6-b105-4412c14bebb2" name="Default" comment="ready to review">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/my/calc/cmd/Cmd.java" afterPath="$PROJECT_DIR$/src/my/calc/cmd/Cmd.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/my/calc/CmdCreator.java" afterPath="$PROJECT_DIR$/src/my/calc/CmdCreator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/my/calc/cmd/Define.java" afterPath="$PROJECT_DIR$/src/my/calc/cmd/Define.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/my/calc/cmd/Divider.java" afterPath="$PROJECT_DIR$/src/my/calc/cmd/Divider.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/my/calc/cmd/Minus.java" afterPath="$PROJECT_DIR$/src/my/calc/cmd/Minus.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/my/calc/cmd/Multiplier.java" afterPath="$PROJECT_DIR$/src/my/calc/cmd/Multiplier.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/my/calc/cmd/Plus.java" afterPath="$PROJECT_DIR$/src/my/calc/cmd/Plus.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/my/calc/cmd/Pop.java" afterPath="$PROJECT_DIR$/src/my/calc/cmd/Pop.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/my/calc/cmd/Print.java" afterPath="$PROJECT_DIR$/src/my/calc/cmd/Print.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/my/calc/cmd/Push.java" afterPath="$PROJECT_DIR$/src/my/calc/cmd/Push.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/my/calc/cmd/Sqrt.java" afterPath="$PROJECT_DIR$/src/my/calc/cmd/Sqrt.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/my/calc/StackCalc.java" afterPath="$PROJECT_DIR$/src/my/calc/StackCalc.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="StackCalc.iws" />
@@ -75,8 +64,7 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
-    <line_breakpoints>
+    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint url="file://$PROJECT_DIR$/src/my/calc/cmd/Pop.java" line="2" class="Pop.java" package="">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
@@ -93,6 +81,7 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </line_breakpoints>
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -105,7 +94,7 @@
       <file leaf-file-name="StackCalc.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/my/calc/StackCalc.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="40" selection-start="571" selection-end="571" vertical-scroll-proportion="0.0" vertical-offset="31" max-vertical-offset="825">
+            <state line="26" column="40" selection-start="571" selection-end="571" vertical-scroll-proportion="0.0" vertical-offset="390" max-vertical-offset="855">
               <folding />
             </state>
           </provider>
@@ -114,9 +103,10 @@
       <file leaf-file-name="CmdCreator.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/my/calc/CmdCreator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="20" selection-start="1152" selection-end="1152" vertical-scroll-proportion="0.85012597" vertical-offset="0" max-vertical-offset="1350">
+            <state line="13" column="0" selection-start="260" selection-end="260" vertical-scroll-proportion="0.075566754" vertical-offset="0" max-vertical-offset="1050">
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#362#375#0" expanded="true" />
+                <element signature="e#424#440#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -125,7 +115,7 @@
       <file leaf-file-name="Plus.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/my/calc/cmd/Plus.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="40" selection-start="404" selection-end="404" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="600">
+            <state line="18" column="40" selection-start="381" selection-end="381" vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="600">
               <folding />
             </state>
           </provider>
@@ -134,7 +124,7 @@
       <file leaf-file-name="Cmd.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/my/calc/cmd/Cmd.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="42" selection-start="218" selection-end="218" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="195">
+            <state line="4" column="42" selection-start="88" selection-end="88" vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="165">
               <folding />
             </state>
           </provider>
@@ -143,7 +133,7 @@
       <file leaf-file-name="Print.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/my/calc/cmd/Print.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="43" selection-start="302" selection-end="302" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="420">
+            <state line="13" column="29" selection-start="265" selection-end="265" vertical-scroll-proportion="0.0" vertical-offset="195" max-vertical-offset="435">
               <folding />
             </state>
           </provider>
@@ -152,7 +142,7 @@
       <file leaf-file-name="Divider.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/my/calc/cmd/Divider.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="0" selection-start="285" selection-end="285" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="615">
+            <state line="14" column="0" selection-start="285" selection-end="285" vertical-scroll-proportion="0.0" vertical-offset="210" max-vertical-offset="615">
               <folding />
             </state>
           </provider>
@@ -161,10 +151,8 @@
       <file leaf-file-name="Push.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/my/calc/cmd/Push.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="59" selection-start="306" selection-end="361" vertical-scroll-proportion="0.0" vertical-offset="91" max-vertical-offset="885">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="18" column="32" selection-start="310" selection-end="369" vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="930">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -172,10 +160,8 @@
       <file leaf-file-name="Pop.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/my/calc/cmd/Pop.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="30" selection-start="285" selection-end="285" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="420">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="13" column="4" selection-start="267" selection-end="267" vertical-scroll-proportion="0.0" vertical-offset="195" max-vertical-offset="420">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -183,7 +169,7 @@
       <file leaf-file-name="Minus.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/my/calc/cmd/Minus.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="0" selection-start="346" selection-end="346" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="585">
+            <state line="16" column="0" selection-start="327" selection-end="327" vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="600">
               <folding />
             </state>
           </provider>
@@ -192,7 +178,7 @@
       <file leaf-file-name="Multiplier.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/my/calc/cmd/Multiplier.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="30" selection-start="294" selection-end="294" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="585">
+            <state line="15" column="0" selection-start="289" selection-end="289" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="600">
               <folding />
             </state>
           </provider>
@@ -220,7 +206,6 @@
         <option value="$PROJECT_DIR$/src/my/calc/cmd/ResourceMark.java" />
         <option value="$PROJECT_DIR$/src/my/calc/cmd/DataStruct.java" />
         <option value="$PROJECT_DIR$/src/my/calc/cmd/Resource.java" />
-        <option value="$PROJECT_DIR$/src/my/calc/cmd/Cmd.java" />
         <option value="$PROJECT_DIR$/src/my/calc/cmd/Divider.java" />
         <option value="$PROJECT_DIR$/src/my/calc/cmd/Plus.java" />
         <option value="$PROJECT_DIR$/src/my/calc/cmd/Sqrt.java" />
@@ -230,15 +215,16 @@
         <option value="$PROJECT_DIR$/src/my/calc/cmd/Minus.java" />
         <option value="$PROJECT_DIR$/src/my/calc/cmd/Multiplier.java" />
         <option value="$PROJECT_DIR$/src/my/calc/cmd/Define.java" />
-        <option value="$PROJECT_DIR$/src/my/calc/CmdCreator.java" />
         <option value="$PROJECT_DIR$/src/my/calc/StackCalc.java" />
+        <option value="$PROJECT_DIR$/src/my/calc/cmd/Cmd.java" />
+        <option value="$PROJECT_DIR$/src/my/calc/CmdCreator.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="10" />
     <option name="y" value="32" />
-    <option name="width" value="2471" />
+    <option name="width" value="2465" />
     <option name="height" value="1357" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -269,8 +255,8 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -643,7 +629,9 @@
       <workItem from="1378980031756" duration="3296000" />
       <workItem from="1378991313056" duration="11546000" />
       <workItem from="1379045762000" duration="3514000" />
-      <workItem from="1379064775056" duration="15824000" />
+      <workItem from="1379064775056" duration="15921000" />
+      <workItem from="1379085870666" duration="859000" />
+      <workItem from="1379091558185" duration="184000" />
     </task>
     <task id="LOCAL-00001" summary="fixed exception, added additions check for values in stack">
       <created>1378480688125</created>
@@ -661,15 +649,19 @@
       <created>1379003413997</created>
       <updated>1379003413997</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="done reading from properties file and reflection to set runtime resources">
+      <created>1379082594403</created>
+      <updated>1379082594403</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="68951000" />
+    <option name="totallyTimeSpent" value="70091000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="10" y="32" width="2471" height="1357" extended-state="4" />
-    <editor active="false" />
+    <frame x="10" y="32" width="2465" height="1357" extended-state="4" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -690,14 +682,17 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24837662" sideWeight="0.67075163" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32924837" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24816924" sideWeight="0.67075163" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32924837" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32924837" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
+  </component>
+  <component name="UpdateCopyrightCheckinHandler">
+    <option name="UPDATE_COPYRIGHT" value="true" />
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -709,7 +704,10 @@
     <MESSAGE value="fixed exception, added additions check for values in stack" />
     <MESSAGE value="looks like done" />
     <MESSAGE value="up to annotations" />
-    <option name="LAST_COMMIT_MESSAGE" value="up to annotations" />
+    <MESSAGE value="done reading from properties file and reflection to set runtime resources" />
+    <MESSAGE value="rea9dy to review" />
+    <option name="LAST_COMMIT_MESSAGE" value="rea9dy to review" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -733,35 +731,57 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="0" selection-start="343" selection-end="343" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="555">
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="jar:///usr/lib/jvm/icedtea-bin-7/jre/lib/rt.jar!/sun/reflect/UnsafeFieldAccessorImpl.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="77" column="0" selection-start="4079" selection-end="4079" vertical-scroll-proportion="0.0" vertical-offset="436" max-vertical-offset="1230">
-          <folding />
-        </state>
+        <state line="77" column="0" selection-start="4079" selection-end="4079" vertical-scroll-proportion="0.0" vertical-offset="436" max-vertical-offset="1230" />
       </provider>
     </entry>
     <entry file="jar:///usr/lib/jvm/icedtea-bin-7/jre/lib/rt.jar!/java/lang/Class.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="24" selection-start="3362" selection-end="3373" vertical-scroll-proportion="0.3324937" vertical-offset="501" max-vertical-offset="4965">
-          <folding />
-        </state>
+        <state line="52" column="24" selection-start="3362" selection-end="3373" vertical-scroll-proportion="0.3324937" vertical-offset="501" max-vertical-offset="4965" />
       </provider>
     </entry>
     <entry file="jar:///usr/lib/jvm/icedtea-bin-7/jre/lib/rt.jar!/java/lang/reflect/Field.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="80" column="16" selection-start="3808" selection-end="3808" vertical-scroll-proportion="0.3324937" vertical-offset="921" max-vertical-offset="1890">
-          <folding />
-        </state>
+        <state line="80" column="16" selection-start="3808" selection-end="3808" vertical-scroll-proportion="0.3324937" vertical-offset="921" max-vertical-offset="1890" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/my/calc/cmd/Define.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="23" column="0" selection-start="554" selection-end="554" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="555">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/my/calc/StackCalc.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="40" selection-start="571" selection-end="571" vertical-scroll-proportion="0.0" vertical-offset="31" max-vertical-offset="825">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/my/calc/cmd/Plus.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="40" selection-start="381" selection-end="381" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="600">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/my/calc/cmd/Cmd.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="42" selection-start="88" selection-end="88" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="165">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/my/calc/cmd/Print.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="29" selection-start="265" selection-end="265" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="435">
           <folding />
         </state>
       </provider>
@@ -773,71 +793,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/my/calc/cmd/Cmd.java">
+    <entry file="file://$PROJECT_DIR$/src/my/calc/cmd/Push.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="42" selection-start="218" selection-end="218" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="195">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/my/calc/cmd/Minus.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="0" selection-start="346" selection-end="346" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="585">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/my/calc/cmd/Multiplier.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="30" selection-start="294" selection-end="294" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="585">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/my/calc/cmd/Plus.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="40" selection-start="404" selection-end="404" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="600">
+        <state line="18" column="32" selection-start="310" selection-end="369" vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="930">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/my/calc/cmd/Pop.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="30" selection-start="285" selection-end="285" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="420">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/my/calc/cmd/Print.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="43" selection-start="302" selection-end="302" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="420">
+        <state line="13" column="4" selection-start="267" selection-end="267" vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="420">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/my/calc/cmd/Push.java">
+    <entry file="file://$PROJECT_DIR$/src/my/calc/cmd/Minus.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="59" selection-start="306" selection-end="361" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="885">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="16" column="0" selection-start="327" selection-end="327" vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="600">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/my/calc/StackCalc.java">
+    <entry file="file://$PROJECT_DIR$/src/my/calc/cmd/Multiplier.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="40" selection-start="571" selection-end="571" vertical-scroll-proportion="0.0" vertical-offset="31" max-vertical-offset="825">
+        <state line="15" column="0" selection-start="289" selection-end="289" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="600">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/my/calc/CmdCreator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="20" selection-start="1152" selection-end="1152" vertical-scroll-proportion="0.85012597" vertical-offset="0" max-vertical-offset="1350">
+        <state line="13" column="0" selection-start="260" selection-end="260" vertical-scroll-proportion="0.075566754" vertical-offset="0" max-vertical-offset="1050">
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#362#375#0" expanded="true" />
+            <element signature="e#424#440#0" expanded="true" />
           </folding>
         </state>
       </provider>

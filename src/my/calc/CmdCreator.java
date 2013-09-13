@@ -11,20 +11,12 @@ import java.util.Map;
 import java.util.Properties;
 import java.util.Set;
 
-/**
- * Created by nerff on 12.09.13.
- */
 public class CmdCreator {
-    Stack mStack;
-    Map<String, Cmd> cmdMap;
-    Map<String, Double> defines;
-    private String config = "calc.properties";
 
-    CmdCreator() {
-        mStack = new Stack(10);
-        cmdMap = new HashMap<String, Cmd>();
-        defines = new HashMap<String, Double>();
-    }
+    Stack mStack = new Stack(10);
+    Map<String, Cmd> cmdMap = new HashMap<String, Cmd>();
+    Map<String, Double> defines = new HashMap<String, Double>();
+    private String config = "calc.properties";
 
     Map<String, Cmd> getCmdMap() {
         return cmdMap;
@@ -35,19 +27,16 @@ public class CmdCreator {
     }
 
     private void setResources(Object object) {
-        Class<?> mClass = object.getClass();
 
-        for (Field field : mClass.getDeclaredFields()) {
+        for (Field field : object.getClass().getDeclaredFields()) {
             Resource resource = field.getAnnotation(Resource.class);
             if (resource != null) {
                 field.setAccessible(true);
                 Object value = null;
                 if (resource.type().equals("Stack")) {
-                    //  System.out.println("Stack is required");
                     value = mStack;
                 }
                 if (resource.type().equals("DefMap")) {
-                    //   System.out.println("Defmap is required");
                     value = defines;
                 }
                 try {
